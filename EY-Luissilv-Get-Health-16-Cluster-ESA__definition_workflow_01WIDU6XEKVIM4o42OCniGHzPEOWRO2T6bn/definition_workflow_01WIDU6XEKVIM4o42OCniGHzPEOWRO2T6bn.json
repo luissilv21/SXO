@@ -9,14 +9,27 @@
       {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "luissilv@cisco.com",
+          "value": "",
           "scope": "local",
-          "name": "Email Notifications",
+          "name": "Listener ESA 9",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WIDU6YW6S811gJmzqQbr0fPYUwUhC7OqM",
+        "unique_name": "variable_workflow_01WJ3TBXTF4VG2A3nYZvGt8M7SLw0LMdeiT",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 16",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJ3U9ZQE63A5lQdhcymIu4EmNihc0tCmG",
         "object_type": "variable_workflow"
       },
       {
@@ -37,25 +50,12 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Listener ESA 8",
+          "name": "Listener ESA 4",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WIDU6YW7G0W6xGyDq1piTICrRjhWFov8Z",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 7",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WIDU6YW8CWG2j5F4JiUAxqBz7dnoXdW03",
+        "unique_name": "variable_workflow_01WIDU6YW7NIR1F7WQCTBq1Lqv8ReLSX3WP",
         "object_type": "variable_workflow"
       },
       {
@@ -76,12 +76,38 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Listener ESA 2",
+          "name": "Listener ESA 14",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WIDU6YW78C77RIwKPDNwVKrHA8TMGdoLH",
+        "unique_name": "variable_workflow_01WJ3U20HSO5E6H2AetzZgzAHgDwNduDABH",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 13",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJ3TWFPHGCF05XNqbOOxLHG3fVQV1AyxO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "luissilv@cisco.com",
+          "scope": "local",
+          "name": "Email Notifications",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW6S811gJmzqQbr0fPYUwUhC7OqM",
         "object_type": "variable_workflow"
       },
       {
@@ -95,19 +121,6 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01WIDU6YW7W2G1NXsEAZPB2VmPX0WDpZCxd",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 15",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WJ3U5GTNEM46UCCDagKX53tkEwGkvPSof",
         "object_type": "variable_workflow"
       },
       {
@@ -141,12 +154,25 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Listener ESA 13",
+          "name": "Listener ESA 10",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WJ3TWFPHGCF05XNqbOOxLHG3fVQV1AyxO",
+        "unique_name": "variable_workflow_01WJ3TFEXSX9X5IKOmhOTXEEHl9LSQLqyuS",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 12",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJ3TPAPSV2A1DOM1AUHJxaXnFWQI5upkg",
         "object_type": "variable_workflow"
       },
       {
@@ -167,12 +193,25 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Listener ESA 9",
+          "name": "Listener ESA 8",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WJ3TBXTF4VG2A3nYZvGt8M7SLw0LMdeiT",
+        "unique_name": "variable_workflow_01WIDU6YW7G0W6xGyDq1piTICrRjhWFov8Z",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 2",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW78C77RIwKPDNwVKrHA8TMGdoLH",
         "object_type": "variable_workflow"
       },
       {
@@ -193,12 +232,25 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Listener ESA 14",
+          "name": "Listener ESA 15",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WJ3U20HSO5E6H2AetzZgzAHgDwNduDABH",
+        "unique_name": "variable_workflow_01WJ3U5GTNEM46UCCDagKX53tkEwGkvPSof",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 7",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW8CWG2j5F4JiUAxqBz7dnoXdW03",
         "object_type": "variable_workflow"
       },
       {
@@ -212,58 +264,6 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01WIDU6YW710I6ZZ8FcjduvNhMCPrfBk2OY",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 4",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WIDU6YW7NIR1F7WQCTBq1Lqv8ReLSX3WP",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 10",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WJ3TFEXSX9X5IKOmhOTXEEHl9LSQLqyuS",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 16",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WJ3U9ZQE63A5lQdhcymIu4EmNihc0tCmG",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 12",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WJ3TPAPSV2A1DOM1AUHJxaXnFWQI5upkg",
         "object_type": "variable_workflow"
       }
     ],
@@ -2634,6 +2634,41 @@
     "categories": [
       "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
     ]
+  },
+  "triggers": {
+    "triggerschedule_01WJ6LYIVQNTQ1wLswmecg6rctnLaHI4Osg": {
+      "workflow_id": "definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn",
+      "name": "Health Trigger",
+      "title": "",
+      "lowercase_name": "schedule.health_trigger",
+      "type": "schedule",
+      "base_type": "trigger",
+      "ref_id": "schedule_01VZN35WKZTVL1RzpnVJPxwcSRPEX60mhzA",
+      "version": "1.0.0",
+      "disabled": true,
+      "unique_name": "triggerschedule_01WJ6LYIVQNTQ1wLswmecg6rctnLaHI4Osg",
+      "object_type": "triggerschedule"
+    }
+  },
+  "schedules": {
+    "schedule_01VZN35WKZTVL1RzpnVJPxwcSRPEX60mhzA": {
+      "unique_name": "schedule_01VZN35WKZTVL1RzpnVJPxwcSRPEX60mhzA",
+      "name": "ESA Health",
+      "type": "basic.schedule",
+      "base_type": "schedule",
+      "properties": {
+        "calendar": "calendar_recurring_1BMfMWvgiDhSjBQ7hTSyvz3NyVZ",
+        "timezone": "Etc/GMT+0",
+        "starttime": "00:00",
+        "interval_hours": 0,
+        "interval_minutes": 5,
+        "number_of_times": 288,
+        "display_name": "ESA Health",
+        "description": ""
+      },
+      "version": "1.0.0",
+      "object_type": "schedule"
+    }
   },
   "targets": {
     "definition_target_01MWRVC6T9R670XuV8Jd87TZjtZtjsbhJFL": {
