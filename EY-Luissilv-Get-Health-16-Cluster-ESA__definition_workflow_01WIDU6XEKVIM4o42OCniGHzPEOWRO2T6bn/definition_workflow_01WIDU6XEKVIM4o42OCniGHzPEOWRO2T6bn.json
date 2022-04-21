@@ -1,0 +1,1568 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn",
+    "name": "EY - Luissilv - Get Health 16 Cluster ESA",
+    "title": "EY - Luissilv - Get Health 16 Cluster ESA",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "luissilv@cisco.com",
+          "scope": "local",
+          "name": "Email Notifications",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW6S811gJmzqQbr0fPYUwUhC7OqM",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 6",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW710I6ZZ8FcjduvNhMCPrfBk2OY",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA2",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW78C77RIwKPDNwVKrHA8TMGdoLH",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 4",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW7NIR1F7WQCTBq1Lqv8ReLSX3WP",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 7",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW8CWG2j5F4JiUAxqBz7dnoXdW03",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 3",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW8QP042lZJsHUCDuqlL5kOR6I4K",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 8",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW7G0W6xGyDq1piTICrRjhWFov8Z",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "luissilv-SecureX-Test",
+          "scope": "local",
+          "name": "Webex Teams Room Name",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW84AI7BeVmx9uzMvkfdAPF5ndGy",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.secure_string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Webex Teams Access Token",
+          "type": "datatype.secure_string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW8JA12m6vBOKRXPBuHDVidfLenl",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA1",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW604V7cpbj0ABdWoCtnohsdeqVc",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 5",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW7W2G1NXsEAZPB2VmPX0WDpZCxd",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Queue_Porcentage",
+          "type": "datatype.integer",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW6E0B74tNvsVf5MGTfRIgB8x0Ig",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "display_name": "EY - Luissilv - Get Health 16 Cluster ESA",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01WIDU75H8KAM6NO7GUqEGYhEA6gOxNSokl",
+        "name": "Set Variables",
+        "title": "Fetch global variables",
+        "type": "core.set_multiple_variables",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Fetch global variables",
+          "skip_execution": false,
+          "variables_to_update": [
+            {
+              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8JA12m6vBOKRXPBuHDVidfLenl$",
+              "variable_value_new": "$global.variable_01TJ7ZOHLO30K0s2QWABIW2nDJDv2rmI918.global.variable_01TJ7ZOHLO30K0s2QWABIW2nDJDv2rmI918$"
+            }
+          ]
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01WIDU796RHOF6hYezuZKB4qMSzOScSXLwc",
+        "name": "Parallel Block",
+        "title": "Cluster US - Inbound",
+        "type": "logic.parallel",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Cluster US - Inbound",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_01WIDU7AUZHHJ64J9lh7u4tV207JWzhpFZm",
+            "name": "Parallel Branch",
+            "title": "Listener",
+            "type": "logic.parallel_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "display_name": "Listener",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01WIDU7BVV41J2IfwMcPtA1UjqbMtboKBwd",
+                "name": "Parallel Block",
+                "title": "Parallel Block",
+                "type": "logic.parallel",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Parallel Block",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_01WIDU7CWUMVE6fQN9I7WNeeDgOWjavcB94",
+                    "name": "Parallel Branch",
+                    "title": "ESA1",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA1",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU7FCVLFC37BeLTlOr7hSnqVEGil3UR",
+                        "name": "Execute Python Script",
+                        "title": "Execute Python Script",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Execute Python Script",
+                          "script": "import telnetlib\nimport socket\n\n# Resolve ESA's hostname and monitor listern on port 25\nhostname = 'esa1.us-demopod1.iphmx.com'\nres = socket.gethostbyname(hostname)\nport = '25'\n\ntry:\n    conn = telnetlib.Telnet(res, port, timeout=10)\n    response = 'Success'\nexcept:\n    response = 'Failed'\nfinally:\n    print(response)",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU7GEUBAH3FQvwY4nYdGpfhIbKTosmq",
+                        "name": "Set Variables",
+                        "title": "Listener Status",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Listener Status",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW604V7cpbj0ABdWoCtnohsdeqVc$",
+                              "variable_value_new": "$activity.definition_activity_01WIDU7FCVLFC37BeLTlOr7hSnqVEGil3UR.output.response_body$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU7HYH8E920p3W4FXIOkpRPXZSZLI5i",
+                    "name": "Parallel Branch",
+                    "title": "ESA2",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA2",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU7J06KKR3wlWdkiOCL31J8qxRTVljv",
+                        "name": "Execute Python Script",
+                        "title": "Execute Python Script",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Execute Python Script",
+                          "script": "import telnetlib\nimport socket\n\n# Resolve ESA's hostname and monitor listern on port 25\nhostname = 'esa1.us-demopod1.iphmx.com'\nres = socket.gethostbyname(hostname)\nport = '25'\n\ntry:\n    conn = telnetlib.Telnet(res, port, timeout=10)\n    response = 'Success'\nexcept:\n    response = 'Failed'\nfinally:\n    print(response)",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU7JYY2E60iJJn3aTUnOFIG6ecyheA3",
+                        "name": "Set Variables",
+                        "title": "Listener Status",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Listener Status",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW78C77RIwKPDNwVKrHA8TMGdoLH$",
+                              "variable_value_new": "$activity.definition_activity_01WIDU7J06KKR3wlWdkiOCL31J8qxRTVljv.output.response_body$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU7L2SOFY5gC4k9dGtZhk5tAnWHHlIh",
+                    "name": "Parallel Branch",
+                    "title": "ESA3",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA3",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU7M9LHGH5kF6HDKGDjdUA7kYRjSLAf",
+                        "name": "Execute Python Script",
+                        "title": "Execute Python Script",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Execute Python Script",
+                          "script": "import telnetlib\nimport socket\n\n# Resolve ESA's hostname and monitor listern on port 25\nhostname = 'esa1.us-demopod1.iphmx.com'\nres = socket.gethostbyname(hostname)\nport = '25'\n\ntry:\n    conn = telnetlib.Telnet(res, port, timeout=10)\n    response = 'Success'\nexcept:\n    response = 'Failed'\nfinally:\n    print(response)",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU7NALE2D0EiDH6HmZpgfRzw4gWRxx9",
+                        "name": "Set Variables",
+                        "title": "Listener Status",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Listener Status",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8QP042lZJsHUCDuqlL5kOR6I4K$",
+                              "variable_value_new": "$activity.definition_activity_01WIDU7M9LHGH5kF6HDKGDjdUA7kYRjSLAf.output.response_body$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU7Q45O3459HCXXDfAmi7YyyBJX6QwZ",
+                    "name": "Parallel Branch",
+                    "title": "ESA4",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA4",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU7RCW4P370EHrBRjcb5vuWGnMnuvlJ",
+                        "name": "Execute Python Script",
+                        "title": "Execute Python Script",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Execute Python Script",
+                          "script": "import telnetlib\nimport socket\n\n# Resolve ESA's hostname and monitor listern on port 25\nhostname = 'esa1.us-demopod1.iphmx.com'\nres = socket.gethostbyname(hostname)\nport = '25'\n\ntry:\n    conn = telnetlib.Telnet(res, port, timeout=10)\n    response = 'Success'\nexcept:\n    response = 'Failed'\nfinally:\n    print(response)",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU7SMRFON2fnKR551z5F5gBQRv7pzjz",
+                        "name": "Set Variables",
+                        "title": "Listener Status",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Listener Status",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW7NIR1F7WQCTBq1Lqv8ReLSX3WP$",
+                              "variable_value_new": "$activity.definition_activity_01WIDU7RCW4P370EHrBRjcb5vuWGnMnuvlJ.output.response_body$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU7TSPAHO3FbHXOQNd6M6LBEJ43r3NT",
+                    "name": "Parallel Branch",
+                    "title": "ESA5",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA5",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU7W639Z26gQDCf1bIMSpDIq89ZMAxZ",
+                        "name": "Execute Python Script",
+                        "title": "Execute Python Script",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Execute Python Script",
+                          "script": "import telnetlib\nimport socket\n\n# Resolve ESA's hostname and monitor listern on port 25\nhostname = 'esa1.us-demopod1.iphmx.com'\nres = socket.gethostbyname(hostname)\nport = '25'\n\ntry:\n    conn = telnetlib.Telnet(res, port, timeout=10)\n    response = 'Success'\nexcept:\n    response = 'Failed'\nfinally:\n    print(response)",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU7Y2RT865XS8pPZ8OXS3bVXnv1lcrP",
+                        "name": "Set Variables",
+                        "title": "Listener Status",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Listener Status",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW7W2G1NXsEAZPB2VmPX0WDpZCxd$",
+                              "variable_value_new": "$activity.definition_activity_01WIDU7W639Z26gQDCf1bIMSpDIq89ZMAxZ.output.response_body$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU7ZEOFUR1JxFhkftt82moUMb8y9kie",
+                    "name": "Parallel Branch",
+                    "title": "ESA6",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA6",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU80H6ADO4enaqTRxxyppZwzjWgUYgz",
+                        "name": "Execute Python Script",
+                        "title": "Execute Python Script",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Execute Python Script",
+                          "script": "import telnetlib\nimport socket\n\n# Resolve ESA's hostname and monitor listern on port 25\nhostname = 'esa1.us-demopod1.iphmx.com'\nres = socket.gethostbyname(hostname)\nport = '25'\n\ntry:\n    conn = telnetlib.Telnet(res, port, timeout=10)\n    response = 'Success'\nexcept:\n    response = 'Failed'\nfinally:\n    print(response)",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU81J400A7ku5LNjwERZs67ROgnAdbi",
+                        "name": "Set Variables",
+                        "title": "Listener Status",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Listener Status",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW710I6ZZ8FcjduvNhMCPrfBk2OY$",
+                              "variable_value_new": "$activity.definition_activity_01WIDU80H6ADO4enaqTRxxyppZwzjWgUYgz.output.response_body$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU84F8PZ15w8ZcsxRGKQXfknILlRsho",
+                    "name": "Parallel Branch",
+                    "title": "ESA7",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA7",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU85RJHOY13R3oS1EQgeekSrn6lgWJr",
+                        "name": "Execute Python Script",
+                        "title": "Execute Python Script",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Execute Python Script",
+                          "script": "import telnetlib\nimport socket\n\n# Resolve ESA's hostname and monitor listern on port 25\nhostname = 'esa1.us-demopod1.iphmx.com'\nres = socket.gethostbyname(hostname)\nport = '25'\n\ntry:\n    conn = telnetlib.Telnet(res, port, timeout=10)\n    response = 'Success'\nexcept:\n    response = 'Failed'\nfinally:\n    print(response)",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU86RO7TD2zbntpBmPy73lgtalSXSPN",
+                        "name": "Set Variables",
+                        "title": "Listener Status",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Listener Status",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8CWG2j5F4JiUAxqBz7dnoXdW03$",
+                              "variable_value_new": "$activity.definition_activity_01WIDU85RJHOY13R3oS1EQgeekSrn6lgWJr.output.response_body$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU886XE6I7dWrjt4cRo1P9BrnnAql2W",
+                    "name": "Parallel Branch",
+                    "title": "ESA8",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA8",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU8A68T856UOAgbYVIQBC2q9lebdT4w",
+                        "name": "Execute Python Script",
+                        "title": "Execute Python Script",
+                        "type": "python3.script",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "Execute Python Script",
+                          "script": "import telnetlib\nimport socket\n\n# Resolve ESA's hostname and monitor listern on port 25\nhostname = 'esa1.us-demopod1.iphmx.com'\nres = socket.gethostbyname(hostname)\nport = '25'\n\ntry:\n    conn = telnetlib.Telnet(res, port, timeout=10)\n    response = 'Success'\nexcept:\n    response = 'Failed'\nfinally:\n    print(response)",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU8BD73EM2kosUmPNBOlSe7CY5m2soF",
+                        "name": "Set Variables",
+                        "title": "Listener Status",
+                        "type": "core.set_multiple_variables",
+                        "base_type": "activity",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Listener Status",
+                          "skip_execution": false,
+                          "variables_to_update": [
+                            {
+                              "variable_to_update": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW7G0W6xGyDq1piTICrRjhWFov8Z$",
+                              "variable_value_new": "$activity.definition_activity_01WIDU8A68T856UOAgbYVIQBC2q9lebdT4w.output.response_body$"
+                            }
+                          ]
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_01WIDU8CLQXQA4a56q3fS2KTBhn6EXAk4Ze",
+                "name": "Condition Block",
+                "title": "Condition Block",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Condition Block",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_01WIDU8DXTRSV2ZZcRE145ojZ6yqbPkD37H",
+                    "name": "Condition Branch",
+                    "title": "YES - High CPU",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "condition": {
+                        "left_operand": {
+                          "left_operand": {
+                            "left_operand": {
+                              "left_operand": {
+                                "left_operand": {
+                                  "left_operand": {
+                                    "left_operand": {
+                                      "left_operand": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW604V7cpbj0ABdWoCtnohsdeqVc$",
+                                      "operator": "ne",
+                                      "right_operand": "Success"
+                                    },
+                                    "operator": "and",
+                                    "right_operand": {
+                                      "left_operand": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW78C77RIwKPDNwVKrHA8TMGdoLH$",
+                                      "operator": "ne",
+                                      "right_operand": "Success"
+                                    }
+                                  },
+                                  "operator": "and",
+                                  "right_operand": {
+                                    "left_operand": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8QP042lZJsHUCDuqlL5kOR6I4K$",
+                                    "operator": "ne",
+                                    "right_operand": "Success"
+                                  }
+                                },
+                                "operator": "and",
+                                "right_operand": {
+                                  "left_operand": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW7NIR1F7WQCTBq1Lqv8ReLSX3WP$",
+                                  "operator": "ne",
+                                  "right_operand": "Success"
+                                }
+                              },
+                              "operator": "and",
+                              "right_operand": {
+                                "left_operand": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW7W2G1NXsEAZPB2VmPX0WDpZCxd$",
+                                "operator": "ne",
+                                "right_operand": "Success"
+                              }
+                            },
+                            "operator": "and",
+                            "right_operand": {
+                              "left_operand": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW710I6ZZ8FcjduvNhMCPrfBk2OY$",
+                              "operator": "ne",
+                              "right_operand": "Success"
+                            }
+                          },
+                          "operator": "and",
+                          "right_operand": {
+                            "left_operand": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8CWG2j5F4JiUAxqBz7dnoXdW03$",
+                            "operator": "ne",
+                            "right_operand": "Success"
+                          }
+                        },
+                        "operator": "and",
+                        "right_operand": {
+                          "left_operand": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW7G0W6xGyDq1piTICrRjhWFov8Z$",
+                          "operator": "ne",
+                          "right_operand": "Success"
+                        }
+                      },
+                      "continue_on_failure": false,
+                      "display_name": "YES - High CPU",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU8GF6I7L1pd9iZafSwrbrQvQj2FMyk",
+                        "name": "Send Email",
+                        "title": "Send Email",
+                        "type": "email.smtp_send_email",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "body": "Hello,\n\nHe have noticed the ESA Cluster's Listener is unresponsive.\n\nPlease verify cluster",
+                          "continue_if_one_address_valid": false,
+                          "continue_on_failure": false,
+                          "display_name": "Send Email",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "subject": "Cisco ESA Alert - High CPU Alert",
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01MWRVC724V7E4GzGLS1BDtv0umJ96Etvft"
+                          },
+                          "to": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW6S811gJmzqQbr0fPYUwUhC7OqM$"
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU8IA9CHW2iizfPntmdefctEiUf2Tm2",
+                        "name": "Webex Teams - Search for Room",
+                        "title": "Webex Teams - Search for Room",
+                        "type": "workflow.atomic_workflow",
+                        "base_type": "subworkflow",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Webex Teams - Search for Room",
+                          "input": {
+                            "variable_workflow_01PP790MCX1DN3EitpQebkUyJS65DbwS3nU": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8JA12m6vBOKRXPBuHDVidfLenl$",
+                            "variable_workflow_01PP790MCXB392D3R8pxh9fgOTjTde2bcMW": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW84AI7BeVmx9uzMvkfdAPF5ndGy$",
+                            "variable_workflow_01PP790MCXHP55YE6ylOEITWsWbUFJeyWGv": "",
+                            "variable_workflow_01PP790MCXM9W1MUwo85y8iNRCoQuQ4RGNa": ""
+                          },
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01MWRVC6T9R670XuV8Jd87TZjtZtjsbhJFL",
+                            "target_type": "web-service.endpoint"
+                          },
+                          "workflow_id": "definition_workflow_01PP790MKJNWV6XyJuLdUyNlM2UV3JJACez",
+                          "workflow_name": "Webex Teams - Search for Room"
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU8KAYMST4Xf3IMGS7lvcX9HRTyV8wm",
+                        "name": "Webex Teams - Post Message to Room",
+                        "title": "Webex Teams - Post Message to Room",
+                        "type": "workflow.atomic_workflow",
+                        "base_type": "subworkflow",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Webex Teams - Post Message to Room",
+                          "input": {
+                            "variable_workflow_01PP78DJH1TI76BYfsu9g0Tqj2S6cUxjtu5": "$activity.definition_activity_01WIDU8IA9CHW2iizfPntmdefctEiUf2Tm2.output.variable_workflow_01PP790MCXJ7Y5cAWcGZWbG4Es0126zb1I6$",
+                            "variable_workflow_01PP78DJH1XNQ7gNQ5iZdperRHqrppzARXC": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8JA12m6vBOKRXPBuHDVidfLenl$",
+                            "variable_workflow_01PP78DJH1YWL3allalGQbg1VkgKwh9GvCi": "",
+                            "variable_workflow_01PP78DJH22BB3Ej3I8tJ4OCQur0unYGjj9": "❗️ ESA Cluster's Listerner Alert❗️\n\nESA Cluster's Listerner is unresponsive.",
+                            "variable_workflow_01SVERQNMKN8N6vqX2djMtAfshphGydGsH8": ""
+                          },
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01MWRVC6T9R670XuV8Jd87TZjtZtjsbhJFL",
+                            "target_type": "web-service.endpoint"
+                          },
+                          "workflow_id": "definition_workflow_01PP78DJMXS415nTjonujf03ROkr6t2PNyw",
+                          "workflow_name": "Webex Teams - Post Message to Room"
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_01WIDU8LS44IK6NKEeJAWxuOT2AwpXgJjoq",
+            "name": "Parallel Branch",
+            "title": "Workqueue",
+            "type": "logic.parallel_block",
+            "base_type": "activity",
+            "properties": {
+              "continue_on_failure": false,
+              "display_name": "Workqueue",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01WIDU8MXCZ2X3a1VPPP9gugirfFV4DbK9m",
+                "name": "Parallel Block",
+                "title": "Parallel Block",
+                "type": "logic.parallel",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Parallel Block",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_01WIDU8NZSSSA6hwm68suYaz2UjCDHG0gUN",
+                    "name": "Parallel Branch",
+                    "title": "ESA1",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA1",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU8P8DW6A1QnbXPYjDGmNtbZ9xLmFsI",
+                        "name": "HTTP Request",
+                        "title": "Get Health - Queue",
+                        "type": "web-service.http_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "allow_auto_redirect": true,
+                          "continue_on_error_status_code": false,
+                          "continue_on_failure": false,
+                          "display_name": "Get Health - Queue",
+                          "method": "GET",
+                          "relative_url": "/health/percentage_queue_utilization",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S"
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU8QNN0MY7FzUoFXNJ2chIEkx1tRGAw",
+                        "name": "JSONPath Query",
+                        "title": "JSONPath Query",
+                        "type": "corejava.jsonpathquery",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "JSONPath Query",
+                          "input_json": "$activity.definition_activity_01WIDU8P8DW6A1QnbXPYjDGmNtbZ9xLmFsI.output.response_body$",
+                          "jsonpath_queries": [
+                            {
+                              "jsonpath_query": "$.data.resultSet",
+                              "jsonpath_query_name": "Queue",
+                              "jsonpath_query_type": "integer"
+                            }
+                          ],
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU8S59ZKO7leaPjkiWmnLQKe7iw7F6G",
+                    "name": "Parallel Branch",
+                    "title": "ESA2",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA2",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU8TD282L79JRgDhq1rxVvTKH7XnNrr",
+                        "name": "HTTP Request",
+                        "title": "Get Health - Queue",
+                        "type": "web-service.http_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "allow_auto_redirect": true,
+                          "continue_on_error_status_code": false,
+                          "continue_on_failure": false,
+                          "display_name": "Get Health - Queue",
+                          "method": "GET",
+                          "relative_url": "/health/percentage_queue_utilization",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S"
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU8UIB1LF409ej0Q19mLWKF8u4DulEa",
+                        "name": "JSONPath Query",
+                        "title": "JSONPath Query",
+                        "type": "corejava.jsonpathquery",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "JSONPath Query",
+                          "input_json": "$activity.definition_activity_01WIDU8TD282L79JRgDhq1rxVvTKH7XnNrr.output.response_body$",
+                          "jsonpath_queries": [
+                            {
+                              "jsonpath_query": "$.data.resultSet",
+                              "jsonpath_query_name": "Queue",
+                              "jsonpath_query_type": "integer"
+                            }
+                          ],
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU8VR4L4Z2HQLjcE9JugFBsJNIpZqQ4",
+                    "name": "Parallel Branch",
+                    "title": "ESA3",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA3",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU8YICYYL6TGQgh47NOMQZkg6xqDsoC",
+                        "name": "HTTP Request",
+                        "title": "Get Health - Queue",
+                        "type": "web-service.http_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "allow_auto_redirect": true,
+                          "continue_on_error_status_code": false,
+                          "continue_on_failure": false,
+                          "display_name": "Get Health - Queue",
+                          "method": "GET",
+                          "relative_url": "/health/percentage_queue_utilization",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S"
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU8ZPXTOB0yI951VkDmQlKKZoNwtgEl",
+                        "name": "JSONPath Query",
+                        "title": "JSONPath Query",
+                        "type": "corejava.jsonpathquery",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "JSONPath Query",
+                          "input_json": "$activity.definition_activity_01WIDU8YICYYL6TGQgh47NOMQZkg6xqDsoC.output.response_body$",
+                          "jsonpath_queries": [
+                            {
+                              "jsonpath_query": "$.data.resultSet",
+                              "jsonpath_query_name": "Queue",
+                              "jsonpath_query_type": "integer"
+                            }
+                          ],
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU911M59L0kD0HnBiOedD91YPTpHYc2",
+                    "name": "Parallel Branch",
+                    "title": "ESA4",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA4",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU929L8UL2RfcFK3CqZw6691gw2DNxZ",
+                        "name": "HTTP Request",
+                        "title": "Get Health - Queue",
+                        "type": "web-service.http_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "allow_auto_redirect": true,
+                          "continue_on_error_status_code": false,
+                          "continue_on_failure": false,
+                          "display_name": "Get Health - Queue",
+                          "method": "GET",
+                          "relative_url": "/health/percentage_queue_utilization",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S"
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU93EQBQ92LRtyYuKjCA9M818qKOE3s",
+                        "name": "JSONPath Query",
+                        "title": "JSONPath Query",
+                        "type": "corejava.jsonpathquery",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "JSONPath Query",
+                          "input_json": "$activity.definition_activity_01WIDU929L8UL2RfcFK3CqZw6691gw2DNxZ.output.response_body$",
+                          "jsonpath_queries": [
+                            {
+                              "jsonpath_query": "$.data.resultSet",
+                              "jsonpath_query_name": "Queue",
+                              "jsonpath_query_type": "integer"
+                            }
+                          ],
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU96981WJ16Blpc7iFFWbgpqzWR3H2e",
+                    "name": "Parallel Branch",
+                    "title": "ESA5",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA5",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU97HNUTK2zrACKn1wVP9lwzHMi77nl",
+                        "name": "HTTP Request",
+                        "title": "Get Health - Queue",
+                        "type": "web-service.http_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "allow_auto_redirect": true,
+                          "continue_on_error_status_code": false,
+                          "continue_on_failure": false,
+                          "display_name": "Get Health - Queue",
+                          "method": "GET",
+                          "relative_url": "/health/percentage_queue_utilization",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S"
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU98LIISZ2PHXdpYiBJqlqlyRjZ3PGU",
+                        "name": "JSONPath Query",
+                        "title": "JSONPath Query",
+                        "type": "corejava.jsonpathquery",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "JSONPath Query",
+                          "input_json": "$activity.definition_activity_01WIDU97HNUTK2zrACKn1wVP9lwzHMi77nl.output.response_body$",
+                          "jsonpath_queries": [
+                            {
+                              "jsonpath_query": "$.data.resultSet",
+                              "jsonpath_query_name": "Queue",
+                              "jsonpath_query_type": "integer"
+                            }
+                          ],
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU9ACLI242iIDvEkwOFv62qLGOLAJsI",
+                    "name": "Parallel Branch",
+                    "title": "ESA6",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA6",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU9BYGOAD3vFWdw1fOQ3VUiBXBMCGhp",
+                        "name": "HTTP Request",
+                        "title": "Get Health - Queue",
+                        "type": "web-service.http_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "allow_auto_redirect": true,
+                          "continue_on_error_status_code": false,
+                          "continue_on_failure": false,
+                          "display_name": "Get Health - Queue",
+                          "method": "GET",
+                          "relative_url": "/health/percentage_queue_utilization",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S"
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU9DC1R616y5DdCmgei3bjXNwBLF4ja",
+                        "name": "JSONPath Query",
+                        "title": "JSONPath Query",
+                        "type": "corejava.jsonpathquery",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "JSONPath Query",
+                          "input_json": "$activity.definition_activity_01WIDU9BYGOAD3vFWdw1fOQ3VUiBXBMCGhp.output.response_body$",
+                          "jsonpath_queries": [
+                            {
+                              "jsonpath_query": "$.data.resultSet",
+                              "jsonpath_query_name": "Queue",
+                              "jsonpath_query_type": "integer"
+                            }
+                          ],
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU9EJO5170Gqhp4tcxQU4x5UP3G065a",
+                    "name": "Parallel Branch",
+                    "title": "ESA7",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA7",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU9G2OIKO0vpzGGLk6RQMiriHYzbob8",
+                        "name": "HTTP Request",
+                        "title": "Get Health - Queue",
+                        "type": "web-service.http_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "allow_auto_redirect": true,
+                          "continue_on_error_status_code": false,
+                          "continue_on_failure": false,
+                          "display_name": "Get Health - Queue",
+                          "method": "GET",
+                          "relative_url": "/health/percentage_queue_utilization",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S"
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU9INGO9Q0cjHt2gXQSfqsdWEoGEUoO",
+                        "name": "JSONPath Query",
+                        "title": "JSONPath Query",
+                        "type": "corejava.jsonpathquery",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "JSONPath Query",
+                          "input_json": "$activity.definition_activity_01WIDU9G2OIKO0vpzGGLk6RQMiriHYzbob8.output.response_body$",
+                          "jsonpath_queries": [
+                            {
+                              "jsonpath_query": "$.data.resultSet",
+                              "jsonpath_query_name": "Queue",
+                              "jsonpath_query_type": "integer"
+                            }
+                          ],
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  },
+                  {
+                    "unique_name": "definition_activity_01WIDU9K0VIJQ1Ybi0K481P1dGUu369BJyK",
+                    "name": "Parallel Branch",
+                    "title": "ESA8",
+                    "type": "logic.parallel_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "ESA8",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU9LBESPG4kBRg0F8nXkAaFTILdKxlP",
+                        "name": "HTTP Request",
+                        "title": "Get Health - Queue",
+                        "type": "web-service.http_request",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "allow_auto_redirect": true,
+                          "continue_on_error_status_code": false,
+                          "continue_on_failure": false,
+                          "display_name": "Get Health - Queue",
+                          "method": "GET",
+                          "relative_url": "/health/percentage_queue_utilization",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S"
+                          }
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU9MLP6I41t9WXKuGjJpjEVuybySulK",
+                        "name": "JSONPath Query",
+                        "title": "JSONPath Query",
+                        "type": "corejava.jsonpathquery",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "continue_on_failure": false,
+                          "display_name": "JSONPath Query",
+                          "input_json": "$activity.definition_activity_01WIDU9LBESPG4kBRg0F8nXkAaFTILdKxlP.output.response_body$",
+                          "jsonpath_queries": [
+                            {
+                              "jsonpath_query": "$.data.resultSet",
+                              "jsonpath_query_name": "Queue",
+                              "jsonpath_query_type": "integer"
+                            }
+                          ],
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "unique_name": "definition_activity_01WIDU9NYIDI33qIlqoVhItEWxcVIhqQT2F",
+                "name": "Condition Block",
+                "title": "Condition Block",
+                "type": "logic.if_else",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Condition Block",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "blocks": [
+                  {
+                    "unique_name": "definition_activity_01WIDU9P3CKCL73BvgniXAhTkfWAxXbhXQV",
+                    "name": "Condition Branch",
+                    "title": "YES - HIGH Workqueue",
+                    "type": "logic.condition_block",
+                    "base_type": "activity",
+                    "properties": {
+                      "condition": {
+                        "left_operand": "$activity.definition_activity_01WIDU8QNN0MY7FzUoFXNJ2chIEkx1tRGAw.output.jsonpath_queries.Queue$",
+                        "operator": "gte",
+                        "right_operand": 80
+                      },
+                      "continue_on_failure": false,
+                      "display_name": "YES - HIGH Workqueue",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "actions": [
+                      {
+                        "unique_name": "definition_activity_01WIDU9QUYF0248nMfJYCS0qSGnLK9FnkZE",
+                        "name": "Send Email",
+                        "title": "Send Email",
+                        "type": "email.smtp_send_email",
+                        "base_type": "activity",
+                        "properties": {
+                          "action_timeout": 180,
+                          "body": "Hello,\n\nHe have noticed the ESA is reporting Workqueue Porcentage at $workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW6E0B74tNvsVf5MGTfRIgB8x0Ig$%",
+                          "continue_if_one_address_valid": false,
+                          "continue_on_failure": false,
+                          "display_name": "Send Email",
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "subject": "Cisco ESA Alert - High Workqueue Porcentage",
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01MWRVC724V7E4GzGLS1BDtv0umJ96Etvft"
+                          },
+                          "to": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW6S811gJmzqQbr0fPYUwUhC7OqM$"
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU9SMZ7MR5Zz9R02ZKvhygY8LXXKAod",
+                        "name": "Webex Teams - Search for Room",
+                        "title": "Webex Teams - Search for Room",
+                        "type": "workflow.atomic_workflow",
+                        "base_type": "subworkflow",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Webex Teams - Search for Room",
+                          "input": {
+                            "variable_workflow_01PP790MCX1DN3EitpQebkUyJS65DbwS3nU": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8JA12m6vBOKRXPBuHDVidfLenl$",
+                            "variable_workflow_01PP790MCXB392D3R8pxh9fgOTjTde2bcMW": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW84AI7BeVmx9uzMvkfdAPF5ndGy$",
+                            "variable_workflow_01PP790MCXHP55YE6ylOEITWsWbUFJeyWGv": "",
+                            "variable_workflow_01PP790MCXM9W1MUwo85y8iNRCoQuQ4RGNa": ""
+                          },
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01MWRVC6T9R670XuV8Jd87TZjtZtjsbhJFL",
+                            "target_type": "web-service.endpoint"
+                          },
+                          "workflow_id": "definition_workflow_01PP790MKJNWV6XyJuLdUyNlM2UV3JJACez",
+                          "workflow_name": "Webex Teams - Search for Room"
+                        },
+                        "object_type": "definition_activity"
+                      },
+                      {
+                        "unique_name": "definition_activity_01WIDU9UBZ00J7MqOgZ7bz0NqyLdnj64sN9",
+                        "name": "Webex Teams - Post Message to Room",
+                        "title": "Webex Teams - Post Message to Room",
+                        "type": "workflow.atomic_workflow",
+                        "base_type": "subworkflow",
+                        "properties": {
+                          "continue_on_failure": false,
+                          "display_name": "Webex Teams - Post Message to Room",
+                          "input": {
+                            "variable_workflow_01PP78DJH1TI76BYfsu9g0Tqj2S6cUxjtu5": "$activity.definition_activity_01WIDU9SMZ7MR5Zz9R02ZKvhygY8LXXKAod.output.variable_workflow_01PP790MCXJ7Y5cAWcGZWbG4Es0126zb1I6$",
+                            "variable_workflow_01PP78DJH1XNQ7gNQ5iZdperRHqrppzARXC": "$workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW8JA12m6vBOKRXPBuHDVidfLenl$",
+                            "variable_workflow_01PP78DJH1YWL3allalGQbg1VkgKwh9GvCi": "",
+                            "variable_workflow_01PP78DJH22BB3Ej3I8tJ4OCQur0unYGjj9": "❗️ High WortkQueue Alert❗️\n\nESA Workqueue is at $workflow.definition_workflow_01WIDU6XEKVIM4o42OCniGHzPEOWRO2T6bn.local.variable_workflow_01WIDU6YW6E0B74tNvsVf5MGTfRIgB8x0Ig$",
+                            "variable_workflow_01SVERQNMKN8N6vqX2djMtAfshphGydGsH8": ""
+                          },
+                          "runtime_user": {
+                            "target_default": true
+                          },
+                          "skip_execution": false,
+                          "target": {
+                            "override_workflow_target": true,
+                            "target_id": "definition_target_01MWRVC6T9R670XuV8Jd87TZjtZtjsbhJFL",
+                            "target_type": "web-service.endpoint"
+                          },
+                          "workflow_id": "definition_workflow_01PP78DJMXS415nTjonujf03ROkr6t2PNyw",
+                          "workflow_name": "Webex Teams - Post Message to Room"
+                        },
+                        "object_type": "definition_activity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  },
+  "targets": {
+    "definition_target_01MWRVC6T9R670XuV8Jd87TZjtZtjsbhJFL": {
+      "unique_name": "definition_target_01MWRVC6T9R670XuV8Jd87TZjtZtjsbhJFL",
+      "name": "Webex Teams",
+      "title": "Webex Teams",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "description": "Webex Teams",
+        "disable_certificate_validation": false,
+        "display_name": "Webex Teams",
+        "host": "webexapis.com",
+        "no_runtime_user": true,
+        "port": 443,
+        "protocol": "https"
+      }
+    },
+    "definition_target_01MWRVC724V7E4GzGLS1BDtv0umJ96Etvft": {
+      "unique_name": "definition_target_01MWRVC724V7E4GzGLS1BDtv0umJ96Etvft",
+      "name": "Email Endpoint",
+      "title": "Email Endpoint",
+      "type": "email.smtp_endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "default_runtime_user_id": "definition_runtime_user_01VCS7GGDHQTG3GYPJs2h1AAJTTWyqNQpXP",
+        "description": "Email Endpoint",
+        "display_name": "Email Endpoint",
+        "no_runtime_user": false,
+        "port": 587,
+        "protocol": "SMTP",
+        "server": "smtp.gmail.com"
+      }
+    },
+    "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S": {
+      "unique_name": "definition_target_01VSQ4I8KXH4A5cczEJdOgTUhxwtnm5yR0S",
+      "name": "ESA1_CES",
+      "title": "ESA1_CES",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "default_runtime_user_id": "definition_runtime_user_01VSQ3NZLBI0I2iX2AWruHGm5aF3c87tGZQ",
+        "disable_certificate_validation": true,
+        "display_name": "ESA1_CES",
+        "host": "dh853-esa1.iphmx.com",
+        "ignore_proxy": false,
+        "no_runtime_user": false,
+        "path": "/esa/api/v2.0/",
+        "port": 4431,
+        "protocol": "https"
+      }
+    }
+  },
+  "runtime_users": {
+    "definition_runtime_user_01VCS7GGDHQTG3GYPJs2h1AAJTTWyqNQpXP": {
+      "unique_name": "definition_runtime_user_01VCS7GGDHQTG3GYPJs2h1AAJTTWyqNQpXP",
+      "name": "GMAIL_SecureX_NEW",
+      "title": "GMAIL_SecureX_NEW",
+      "type": "runtime_user.email_credentials",
+      "base_type": "runtime_user",
+      "object_type": "definition_runtime_user",
+      "properties": {
+        "display_name": "GMAIL_SecureX_NEW",
+        "password": "*****",
+        "sender": "*****"
+      }
+    },
+    "definition_runtime_user_01VSQ3NZLBI0I2iX2AWruHGm5aF3c87tGZQ": {
+      "unique_name": "definition_runtime_user_01VSQ3NZLBI0I2iX2AWruHGm5aF3c87tGZQ",
+      "name": "ESA_CES_dh853-esa1",
+      "title": "ESA_CES_dh853-esa1",
+      "type": "runtime_user.web-service_basic_credentials",
+      "base_type": "runtime_user",
+      "object_type": "definition_runtime_user",
+      "properties": {
+        "auth_option": "*****",
+        "basic_password": "*****",
+        "basic_username": "*****",
+        "display_name": "ESA_CES_dh853-esa1"
+      }
+    }
+  },
+  "variables": {
+    "variable_01TJ7ZOHLO30K0s2QWABIW2nDJDv2rmI918": {
+      "unique_name": "variable_01TJ7ZOHLO30K0s2QWABIW2nDJDv2rmI918",
+      "properties": {
+        "value": "*****",
+        "scope": "global",
+        "name": "Webex_Access_Token_BOT",
+        "type": "datatype.secure_string",
+        "is_required": false,
+        "is_invisible": false
+      },
+      "object_type": "variable"
+    }
+  },
+  "atomic_workflows": [
+    "definition_workflow_01PP790MKJNWV6XyJuLdUyNlM2UV3JJACez",
+    "definition_workflow_01PP78DJMXS415nTjonujf03ROkr6t2PNyw"
+  ],
+  "dependent_workflows": [
+    "definition_workflow_01PP790MKJNWV6XyJuLdUyNlM2UV3JJACez",
+    "definition_workflow_01PP78DJMXS415nTjonujf03ROkr6t2PNyw"
+  ]
+}
