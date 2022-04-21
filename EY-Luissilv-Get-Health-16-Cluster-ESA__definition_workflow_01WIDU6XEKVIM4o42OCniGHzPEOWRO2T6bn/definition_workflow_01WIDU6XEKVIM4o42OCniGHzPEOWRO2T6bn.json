@@ -7,29 +7,16 @@
     "base_type": "workflow",
     "variables": [
       {
-        "schema_id": "datatype.integer",
-        "properties": {
-          "value": 0,
-          "scope": "local",
-          "name": "Queue_Porcentage",
-          "type": "datatype.integer",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WIDU6YW6E0B74tNvsVf5MGTfRIgB8x0Ig",
-        "object_type": "variable_workflow"
-      },
-      {
         "schema_id": "datatype.string",
         "properties": {
-          "value": "",
+          "value": "luissilv@cisco.com",
           "scope": "local",
-          "name": "Listener ESA 12",
+          "name": "Email Notifications",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WJ3TPAPSV2A1DOM1AUHJxaXnFWQI5upkg",
+        "unique_name": "variable_workflow_01WIDU6YW6S811gJmzqQbr0fPYUwUhC7OqM",
         "object_type": "variable_workflow"
       },
       {
@@ -50,129 +37,12 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Listener ESA 11",
+          "name": "Listener ESA 8",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WJ3TJME0TGT1upxrKpwGnZ0RQsKVYLOwO",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "luissilv-SecureX-Test",
-          "scope": "local",
-          "name": "Webex Teams Room Name",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WIDU6YW84AI7BeVmx9uzMvkfdAPF5ndGy",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 6",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WIDU6YW710I6ZZ8FcjduvNhMCPrfBk2OY",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 4",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WIDU6YW7NIR1F7WQCTBq1Lqv8ReLSX3WP",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.secure_string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Webex Teams Access Token",
-          "type": "datatype.secure_string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WIDU6YW8JA12m6vBOKRXPBuHDVidfLenl",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 16",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WJ3U9ZQE63A5lQdhcymIu4EmNihc0tCmG",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 13",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WJ3TWFPHGCF05XNqbOOxLHG3fVQV1AyxO",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "luissilv@cisco.com",
-          "scope": "local",
-          "name": "Email Notifications",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WIDU6YW6S811gJmzqQbr0fPYUwUhC7OqM",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 14",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WJ3U20HSO5E6H2AetzZgzAHgDwNduDABH",
-        "object_type": "variable_workflow"
-      },
-      {
-        "schema_id": "datatype.string",
-        "properties": {
-          "value": "",
-          "scope": "local",
-          "name": "Listener ESA 9",
-          "type": "datatype.string",
-          "is_required": false,
-          "is_invisible": false
-        },
-        "unique_name": "variable_workflow_01WJ3TBXTF4VG2A3nYZvGt8M7SLw0LMdeiT",
+        "unique_name": "variable_workflow_01WIDU6YW7G0W6xGyDq1piTICrRjhWFov8Z",
         "object_type": "variable_workflow"
       },
       {
@@ -186,6 +56,19 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01WIDU6YW8CWG2j5F4JiUAxqBz7dnoXdW03",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "luissilv-SecureX-Test",
+          "scope": "local",
+          "name": "Webex Teams Room Name",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW84AI7BeVmx9uzMvkfdAPF5ndGy",
         "object_type": "variable_workflow"
       },
       {
@@ -232,12 +115,25 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Listener ESA 8",
+          "name": "Listener ESA 3",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WIDU6YW7G0W6xGyDq1piTICrRjhWFov8Z",
+        "unique_name": "variable_workflow_01WIDU6YW8QP042lZJsHUCDuqlL5kOR6I4K",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.secure_string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Webex Teams Access Token",
+          "type": "datatype.secure_string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW8JA12m6vBOKRXPBuHDVidfLenl",
         "object_type": "variable_workflow"
       },
       {
@@ -245,12 +141,90 @@
         "properties": {
           "value": "",
           "scope": "local",
-          "name": "Listener ESA 3",
+          "name": "Listener ESA 13",
           "type": "datatype.string",
           "is_required": false,
           "is_invisible": false
         },
-        "unique_name": "variable_workflow_01WIDU6YW8QP042lZJsHUCDuqlL5kOR6I4K",
+        "unique_name": "variable_workflow_01WJ3TWFPHGCF05XNqbOOxLHG3fVQV1AyxO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 11",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJ3TJME0TGT1upxrKpwGnZ0RQsKVYLOwO",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 9",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJ3TBXTF4VG2A3nYZvGt8M7SLw0LMdeiT",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "local",
+          "name": "Queue_Porcentage",
+          "type": "datatype.integer",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW6E0B74tNvsVf5MGTfRIgB8x0Ig",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 14",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJ3U20HSO5E6H2AetzZgzAHgDwNduDABH",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 6",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW710I6ZZ8FcjduvNhMCPrfBk2OY",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 4",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WIDU6YW7NIR1F7WQCTBq1Lqv8ReLSX3WP",
         "object_type": "variable_workflow"
       },
       {
@@ -264,6 +238,32 @@
           "is_invisible": false
         },
         "unique_name": "variable_workflow_01WJ3TFEXSX9X5IKOmhOTXEEHl9LSQLqyuS",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 16",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJ3U9ZQE63A5lQdhcymIu4EmNihc0tCmG",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Listener ESA 12",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01WJ3TPAPSV2A1DOM1AUHJxaXnFWQI5upkg",
         "object_type": "variable_workflow"
       }
     ],
