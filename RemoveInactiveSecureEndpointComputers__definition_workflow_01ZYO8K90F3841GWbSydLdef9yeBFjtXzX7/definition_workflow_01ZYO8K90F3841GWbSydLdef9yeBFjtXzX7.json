@@ -1,0 +1,536 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7",
+    "name": "main - remove inactive endpoint computers",
+    "title": "main - remove inactive endpoint computers",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "30",
+          "scope": "local",
+          "name": "last-seen-over",
+          "type": "datatype.string",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01ZYO8K9AJNMI20IQbrCNiX1wHjMWdmfenH",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.boolean",
+        "properties": {
+          "value": false,
+          "scope": "local",
+          "name": "more_check",
+          "type": "datatype.boolean",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01ZYOEW9ZKBPU0kpW0VgS5kKb5U09MV2Use",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 5,
+          "scope": "local",
+          "name": "connnector_limit",
+          "type": "datatype.integer",
+          "is_required": false,
+          "is_invisible": false
+        },
+        "unique_name": "variable_workflow_01ZYO8K9AJBSB0GfJOrxkhXofMOkDkbL6nH",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "description": "This main process will keep running the atomic (which will delete the connectors) until we are under the limit of remaining inactive connectors.\n\nUse extreme caution as the atomic will delete inactive connectors\n",
+      "display_name": "main - remove inactive endpoint computers",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "execute_on_target_group": true,
+        "target_group": {
+          "target_group_id": "target_group_01EJ0TQWPQWBD0qiWqClJKj9FOzwiZRfOFH",
+          "run_on_all_targets": false,
+          "selected_target_types": [
+            "web-service.endpoint"
+          ],
+          "use_criteria": {
+            "choose_target_using_algorithm": "choose_first_with_matching_criteria",
+            "conditions": [
+              {
+                "operator": "eqi",
+                "left_operand": "$targetgroup.web-service endpoint.input.display_name$",
+                "right_operand": "AMP_Target"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01ZYOZ4JV30AN4k7F5XSfXeoMLnZsqvRW0k",
+        "name": "Group",
+        "title": "initial total check",
+        "type": "logic.group",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "initial total check",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "actions": [
+          {
+            "unique_name": "definition_activity_01ZYOB2HXG6512nSc7tOWCH0WIJXmx8NO8U",
+            "name": "HTTP Request",
+            "title": "initial total check",
+            "type": "web-service.http_request",
+            "base_type": "activity",
+            "properties": {
+              "accept": "application/json",
+              "action_timeout": 180,
+              "allow_auto_redirect": true,
+              "allow_headers_redirect": false,
+              "content_type": "application/json",
+              "continue_on_error_status_code": true,
+              "continue_on_failure": false,
+              "display_name": "initial total check",
+              "method": "GET",
+              "relative_url": "computers?last_seen_over=$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYO8K9AJNMI20IQbrCNiX1wHjMWdmfenH$\u0026limit=1",
+              "runtime_user": {
+                "target_default": true
+              },
+              "skip_execution": false,
+              "target": {
+                "use_workflow_target_group": true
+              }
+            },
+            "object_type": "definition_activity"
+          },
+          {
+            "unique_name": "definition_activity_01ZYOB6D86NL04QdDzcqZbMGqJPkSRgVFxA",
+            "name": "JSONPath Query",
+            "title": "Get total connectors",
+            "type": "corejava.jsonpathquery",
+            "base_type": "activity",
+            "properties": {
+              "action_timeout": 180,
+              "continue_on_failure": false,
+              "display_name": "Get total connectors",
+              "input_json": "$activity.definition_activity_01ZYOB2HXG6512nSc7tOWCH0WIJXmx8NO8U.output.response_body$",
+              "jsonpath_queries": [
+                {
+                  "jsonpath_query": "$.metadata.results.total",
+                  "jsonpath_query_name": "total_connectors",
+                  "jsonpath_query_type": "integer"
+                }
+              ],
+              "skip_execution": false
+            },
+            "object_type": "definition_activity"
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_01ZYODLKQP2Q00xHg6fWGFm9xYGxbfZ965a",
+        "name": "Condition Block",
+        "title": "do we have more than limit",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "do we have more than limit",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_01ZYODLKZW84G4G0a37Lnid4qAjFiafyTI8",
+            "name": "Condition Branch",
+            "title": "yes",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "condition": {
+                "left_operand": "$activity.definition_activity_01ZYOB6D86NL04QdDzcqZbMGqJPkSRgVFxA.output.jsonpath_queries.total_connectors$",
+                "operator": "gt",
+                "right_operand": 0
+              },
+              "continue_on_failure": false,
+              "display_name": "yes",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01ZYOEF2RO5CI4KwU8mvG8Gv7SBNOy1MCus",
+                "name": "Set Variables",
+                "title": "Set check to true",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Set check to true",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYOEW9ZKBPU0kpW0VgS5kKb5U09MV2Use$",
+                      "variable_value_new": true
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_01ZYODLL9XU702PGBeirDn9sRrul1fOUP6N",
+            "name": "Condition Branch",
+            "title": "No",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "condition": {
+                "left_operand": "$activity.definition_activity_01ZYOB6D86NL04QdDzcqZbMGqJPkSRgVFxA.output.jsonpath_queries.total_connectors$",
+                "operator": "eq",
+                "right_operand": 0
+              },
+              "continue_on_failure": false,
+              "display_name": "No",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01ZYOFOX3KD323AlyWSJAmPxcwTCiweqfO8",
+                "name": "Set Variables",
+                "title": "Set check to false",
+                "type": "core.set_multiple_variables",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Set check to false",
+                  "skip_execution": false,
+                  "variables_to_update": [
+                    {
+                      "variable_to_update": "$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYOEW9ZKBPU0kpW0VgS5kKb5U09MV2Use$",
+                      "variable_value_new": false
+                    }
+                  ]
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_01ZYO9NYZ2H2Q7TarOOsnXpkV9MObOugKIy",
+        "name": "While Loop",
+        "title": "While Loop to process atomic",
+        "type": "logic.while",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "While Loop to process atomic",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_01ZYO9NZ875Y45eNhDVORs81qBk3DFfjJjv",
+            "name": "Condition Branch",
+            "title": "while more_check is true",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "condition": {
+                "left_operand": "$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYOEW9ZKBPU0kpW0VgS5kKb5U09MV2Use$",
+                "operator": "eq",
+                "right_operand": true
+              },
+              "continue_on_failure": false,
+              "display_name": "while more_check is true",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01ZYOPEQF0TMQ0XWaksN8x2vE1JmdWGqESm",
+                "name": "atomic - remove inactive computers",
+                "title": "atomic - remove inactive computers",
+                "type": "workflow.atomic_workflow",
+                "base_type": "subworkflow",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "atomic - remove inactive computers",
+                  "input": {
+                    "variable_workflow_01ZYO6OBJO3OB0806nM0OGr6WLtx7z9HZJe": "$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYO8K9AJBSB0GfJOrxkhXofMOkDkbL6nH$",
+                    "variable_workflow_01ZYO6OBJOGZ91Hx3dSVeME9a0cK0mFqvz2": "$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYO8K9AJNMI20IQbrCNiX1wHjMWdmfenH$"
+                  },
+                  "runtime_user": {
+                    "target_default": true
+                  },
+                  "skip_execution": false,
+                  "target": {
+                    "execute_on_this_target_group": true,
+                    "target_group_id": "target_group_01EJ0TQWPQWBD0qiWqClJKj9FOzwiZRfOFH"
+                  },
+                  "workflow_id": "definition_workflow_01ZYO6OB6FBBC52DhGzYKSKMTegaEvLbC0j",
+                  "workflow_name": "atomic - remove inactive computers"
+                },
+                "object_type": "definition_activity"
+              },
+              {
+                "unique_name": "definition_activity_01ZYOCJTLLOZH1tN25yR2eYW4wg03MiwNMm",
+                "name": "Group",
+                "title": "check again if we have additional inactive connectors",
+                "type": "logic.group",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "check again if we have additional inactive connectors",
+                  "skip_execution": false
+                },
+                "object_type": "definition_activity",
+                "actions": [
+                  {
+                    "unique_name": "definition_activity_01ZYO8KCE16XK18C63KHxEqin84qTBoVtlE",
+                    "name": "HTTP Request",
+                    "title": "Get computers exceeding last seen over",
+                    "type": "web-service.http_request",
+                    "base_type": "activity",
+                    "properties": {
+                      "accept": "application/json",
+                      "action_timeout": 180,
+                      "allow_auto_redirect": true,
+                      "allow_headers_redirect": false,
+                      "content_type": "application/json",
+                      "continue_on_error_status_code": true,
+                      "continue_on_failure": false,
+                      "display_name": "Get computers exceeding last seen over",
+                      "method": "GET",
+                      "relative_url": "computers?last_seen_over=$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYO8K9AJNMI20IQbrCNiX1wHjMWdmfenH$\u0026limit=1",
+                      "runtime_user": {
+                        "target_default": true
+                      },
+                      "skip_execution": false,
+                      "target": {
+                        "use_workflow_target_group": true
+                      }
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_01ZYO8KD0GQ9K4ULV1H1RTLG3RRHtY3WtAa",
+                    "name": "JSONPath Query",
+                    "title": "Get total connectors",
+                    "type": "corejava.jsonpathquery",
+                    "base_type": "activity",
+                    "properties": {
+                      "action_timeout": 180,
+                      "continue_on_failure": false,
+                      "display_name": "Get total connectors",
+                      "input_json": "$activity.definition_activity_01ZYO8KCE16XK18C63KHxEqin84qTBoVtlE.output.response_body$",
+                      "jsonpath_queries": [
+                        {
+                          "jsonpath_query": "$.metadata.results.total",
+                          "jsonpath_query_name": "total_connectors",
+                          "jsonpath_query_type": "integer"
+                        }
+                      ],
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity"
+                  },
+                  {
+                    "unique_name": "definition_activity_01ZYOGSBGC0J76TC2uq2MWOFdIDzQudTT7S",
+                    "name": "Condition Block",
+                    "title": "do we have additional inactive connectors",
+                    "type": "logic.if_else",
+                    "base_type": "activity",
+                    "properties": {
+                      "continue_on_failure": false,
+                      "display_name": "do we have additional inactive connectors",
+                      "skip_execution": false
+                    },
+                    "object_type": "definition_activity",
+                    "blocks": [
+                      {
+                        "unique_name": "definition_activity_01ZYOGSBGCUK127IXJ7TzVvG5TF7nMrwHOb",
+                        "name": "Condition Branch",
+                        "title": "yes",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "condition": {
+                            "left_operand": "$activity.definition_activity_01ZYOB6D86NL04QdDzcqZbMGqJPkSRgVFxA.output.jsonpath_queries.total_connectors$",
+                            "operator": "gt",
+                            "right_operand": 0
+                          },
+                          "continue_on_failure": false,
+                          "description": "if we have more inactive connectors, we set more_check to be true",
+                          "display_name": "yes",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_01ZYOGSBGFSRE0NggA8XBNdUbag03WS4iCC",
+                            "name": "Set Variables",
+                            "title": "Set check to true",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Set check to true",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYOEW9ZKBPU0kpW0VgS5kKb5U09MV2Use$",
+                                  "variable_value_new": true
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      },
+                      {
+                        "unique_name": "definition_activity_01ZYOGSBGGD2K0e7qkJBpuKDaYjUJNU5qUy",
+                        "name": "Condition Branch",
+                        "title": "No",
+                        "type": "logic.condition_block",
+                        "base_type": "activity",
+                        "properties": {
+                          "condition": {
+                            "left_operand": "$activity.definition_activity_01ZYOB6D86NL04QdDzcqZbMGqJPkSRgVFxA.output.jsonpath_queries.total_connectors$",
+                            "operator": "eq",
+                            "right_operand": 0
+                          },
+                          "continue_on_failure": false,
+                          "description": "we dont have any inactive connectors, we need to set to false to exit while loop",
+                          "display_name": "No",
+                          "skip_execution": false
+                        },
+                        "object_type": "definition_activity",
+                        "actions": [
+                          {
+                            "unique_name": "definition_activity_01ZYOGSBGI0FJ2ptuLzwtapYylqbyWtjU0s",
+                            "name": "Set Variables",
+                            "title": "Set check to false",
+                            "type": "core.set_multiple_variables",
+                            "base_type": "activity",
+                            "properties": {
+                              "continue_on_failure": false,
+                              "display_name": "Set check to false",
+                              "skip_execution": false,
+                              "variables_to_update": [
+                                {
+                                  "variable_to_update": "$workflow.definition_workflow_01ZYO8K90F3841GWbSydLdef9yeBFjtXzX7.local.variable_workflow_01ZYOEW9ZKBPU0kpW0VgS5kKb5U09MV2Use$",
+                                  "variable_value_new": false
+                                }
+                              ]
+                            },
+                            "object_type": "definition_activity"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  },
+  "targets": {
+    "definition_target_01VCU0VFDHQ0W0EVTC4VRm3nKPl4y1YmvsF": {
+      "unique_name": "definition_target_01VCU0VFDHQ0W0EVTC4VRm3nKPl4y1YmvsF",
+      "name": "Phishing Investigation Mailbox",
+      "title": "Phishing Investigation Mailbox",
+      "type": "email.imap_endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "default_runtime_user_id": "definition_runtime_user_01VCS7GGDHQTG3GYPJs2h1AAJTTWyqNQpXP",
+        "display_name": "Phishing Investigation Mailbox",
+        "ignore_certificate_errors": true,
+        "polling_interval": 30,
+        "port": 993,
+        "protocol": "IMAP",
+        "server": "imap.gmail.com",
+        "tls_enabled": true
+      }
+    }
+  },
+  "runtime_users": {
+    "definition_runtime_user_01VCS7GGDHQTG3GYPJs2h1AAJTTWyqNQpXP": {
+      "unique_name": "definition_runtime_user_01VCS7GGDHQTG3GYPJs2h1AAJTTWyqNQpXP",
+      "name": "GMAIL_SecureX_NEW",
+      "title": "GMAIL_SecureX_NEW",
+      "type": "runtime_user.email_credentials",
+      "base_type": "runtime_user",
+      "object_type": "definition_runtime_user",
+      "properties": {
+        "display_name": "GMAIL_SecureX_NEW",
+        "password": "*****",
+        "sender": "securexcssges"
+      }
+    }
+  },
+  "target_groups": {
+    "target_group_01EJ0TQWPQWBD0qiWqClJKj9FOzwiZRfOFH": {
+      "unique_name": "target_group_01EJ0TQWPQWBD0qiWqClJKj9FOzwiZRfOFH",
+      "name": "Default TargetGroup",
+      "title": "Default TargetGroup",
+      "type": "generic.target_group",
+      "base_type": "target_group",
+      "version": "1.0.0",
+      "targets": [
+        {
+          "data_target_type": "web-service.endpoint",
+          "view_target_type": "web-service.endpoint",
+          "include_all_targets": true
+        },
+        {
+          "data_target_type": "email.smtp_endpoint",
+          "view_target_type": "email.smtp_endpoint",
+          "include_all_targets": true
+        },
+        {
+          "data_target_type": "email.imap_endpoint",
+          "view_target_type": "email.imap_endpoint",
+          "include_all_targets": false,
+          "selected_target_ids": [
+            "definition_target_01VCU0VFDHQ0W0EVTC4VRm3nKPl4y1YmvsF"
+          ]
+        }
+      ],
+      "object_type": "target_group"
+    }
+  },
+  "atomic_workflows": [
+    "definition_workflow_01ZYO6OB6FBBC52DhGzYKSKMTegaEvLbC0j"
+  ],
+  "dependent_workflows": [
+    "definition_workflow_01ZYO6OB6FBBC52DhGzYKSKMTegaEvLbC0j"
+  ]
+}
